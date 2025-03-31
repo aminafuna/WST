@@ -23,14 +23,14 @@
             <!-- Navigation-->
             <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
                 <div class="container px-5">
-                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Read n' Chill Bookshop</span></a>
+                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-gradient">Read n' Chill BookCafe</span></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
                             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="" >About Page</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#reg" data-bs-toggle="modal" data-bs-target="#reg">Registration</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#log" data-bs-toggle="modal" data-bs-target="#log">Login</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#reg">Registration</a></li>
+                            <li class="nav-item"><a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#log">Log In</a></li>
                         </ul>
                     </div>
                 </div>
@@ -53,13 +53,13 @@
                             </div>
                         </div>
                         <div class="col-xxl-7">
-                            
                             <!-- Header profile picture-->
                             <div class="d-flex justify-content-center mt-5 mt-xxl-0">
                                 <div class="profile bg-gradient-primary-to-secondary">
+                                    <!-- TIP: For best results, use a photo with a transparent background like the demo example below-->
+                                    <!-- Watch a tutorial on how to do this on YouTube (link)-->
                                     <img class="profile-img" src="img/3.gif" alt="..." />
                                     <div class="dots-1">
-
                                         <!-- SVG Dots-->
                                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 191.6 1215.4" style="enable-background: new 0 0 191.6 1215.4" xml:space="preserve">
                                             <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)">
@@ -216,27 +216,25 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">CREATE ACCOUNT</h1>
+          <h5 class="modal-title" id="exampleModalLabel">CREATE ACCOUNT</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
 
-        <div class="modal-body">
+            <div class="modal-body">
 
-            <form action="process.php" method="POST">
-          
-            <div class="input-group flex-nowrap mb-3">
-                <span class="input-group-text" id="addon-wrapping"><i class="bi bi-person-circle fs-4 text-primary"></i></span>
-                <input type="text" class="form-control"
-                 placeholder="Enter First name..." required name="fn">
-              </div>
+                <form action ="process.php" method="POST">
 
-              <div class="input-group flex-nowrap mb-3">
-                <span class="input-group-text" id="addon-wrapping"><i class="bi bi-person-circle fs-4 text-primary"></i></span>
-                <input type="text" class="form-control"
-                 placeholder="Enter Last name..." required name="ln">
-              </div>
+                    <div class="input-group flex-nowrap mb-3">
+                        <span class="input-group-text" id="addon-wrapping"><i class="bi bi-person-circle fs-4 text-primary"></i></span>
+                        <input type="text" class="form-control" placeholder="Enter First Name" required name="fn">
+                    </div>
 
-              <div class="input-group flex-nowrap mb-3">
+                    <div class="input-group flex-nowrap mb-3">
+                        <span class="input-group-text" id="addon-wrapping"><i class="bi bi-person-circle fs-4 text-primary"></i></span>
+                        <input type="text" class="form-control" placeholder="Enter Last Name" required name="ln">
+                    </div>
+
+                    <div class="input-group flex-nowrap mb-3">
                         <span class="input-group-text" id="addon-wrapping"><i class="bi bi-person-circle fs-4 text-primary"></i></span>
                             <select class="form-select" placeholder="Enter Gender" aria-label="gender" required name="gd">
                                 <option value="gender">Enter Gender</option>
@@ -246,99 +244,92 @@
                             </select>
                     </div>
 
-              <div class="input-group flex-nowrap mb-3">
-                <span class="input-group-text" id="addon-wrapping"><i class="bi bi-envelope-fill fs-4 text-primary"></i></span>
-                <input type="email" class="form-control"
-                 placeholder="Enter your Email..." required name="email">
-              </div>
+                    <div class="input-group flex-nowrap mb-3">
+                        <span class="input-group-text" id="addon-wrapping"><i class="bi bi-envelope-fill fs-4 text-primary"></i></span>
+                        <input type="text" class="form-control" placeholder="Enter Email Address" required name="email">
+                    </div>
 
-              <div class="input-group flex-nowrap mb-3">
-                <span class="input-group-text" id="addon-wrapping"><i class="bi bi-key-fill fs-4 text-primary"></i></span>
-                <input type="password" id="myInput" class="form-control"
-                 placeholder="Enter your Password..." required name="pass">
-              </div>
-              <span class="fs-4">
-                <input type="checkbox" class="form-check-input"
-                onclick="myFunction()"> Show Password
-            </span>
-            <script>
-                function myFunction() {
-  var x = document.getElementById("myInput");
-  if (x.type === "password") {
-    x.type = "text";
-  } else {
-    x.type = "password";
-  }
-}
-            </script>
+                    <div class="input-group flex-nowrap mb-3">
+                        <span class="input-group-text" id="addon-wrapping"><i class="bi bi-key-fill fs-4 text-primary"></i></span>
+                        <input type="password" id="myInput" class="form-control" placeholder="Enter Password" required name="pass">
+                    </div>
+                    <span class="fs-5">
+                        <input type="checkbox" class="form-check-input" onclick="myFunction()"> Show Password
+                    </span>
 
+                    <script>
+                        function myFunction() {
+                            var x = document.getElementById("myInput");
+                            if (x.type === "password") {
+                              x.type = "text";
+                            } else {
+                              x.type = "password";
+                            }
+                          }
+                    </script>
+                
+                    <div class="modal-footer">
+                    <input type="submit" value="REGISTER" name="reg" class="btn btn-secondary">
+                    </div>
+            </form>
         </div>
-        <div class="modal-footer">
-          <input type="submit" name="reg" value="REGISTER" class="btn btn-success">
         </div>
-</form>
-
-      </div>
     </div>
-  </div>
+</div>
 
 
-  <!-- Modal Login-->
+  <!-- Modal Log In-->
 <div class="modal fade" id="log" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">LOGIN</h1>
+          <h5 class="modal-title" id="exampleModalLabel">LOG IN</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+
+                <form action ="process.php" method="POST">
+
+                    <div class="input-group flex-nowrap mb-3 border border-primary rounded">
+                        <span class="input-group-text" id="addon-wrapping"><i class="bi bi-envelope-fill fs-4 text-primary"></i></span>
+                        <input type="text" class="form-control" placeholder="Enter Email Address" required name="email">
+                    </div>
+
+                    <div class="input-group flex-nowrap mb-3 border border-primary rounded">
+                        <span class="input-group-text" id="addon-wrapping"><i class="bi bi-key-fill fs-4 text-primary"></i></span>
+                        <input type="password" id="Inputlog" class="form-control" placeholder="Enter Password" required name="pass">
+                    </div>
+                    <span class="fs-5">
+                        <input type="checkbox" class="form-check-input" onclick="myFunctionlog()">  Show Password
+                    </span>
+
+                    <script>
+                        function myFunctionlog() {
+                            var x = document.getElementById("Inputlog");
+                            if (x.type === "password") {
+                              x.type = "text";
+                            } else {
+                              x.type = "password";
+                            }
+                          }
+                    </script>
+
+                    <div class="modal-footer">
+                        <input type="submit" name="log" value="LOGIN" class="btn btn-primary">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CLOSE</button>
+                    </div>
+                </form>
+            </div>
         </div>
-
-        <div class="modal-body">
-
-            <form action="process.php" method="POST">
-
-           
-              <div class="input-group flex-nowrap mb-3">
-                <span class="input-group-text" id="addon-wrapping"><i class="bi bi-envelope-fill fs-4 text-primary"></i></span>
-                <input type="email" class="form-control"
-                 placeholder="Enter your Email..." required name="email">
-              </div>
-
-              <div class="input-group flex-nowrap mb-3">
-                <span class="input-group-text" id="addon-wrapping"><i class="bi bi-key-fill fs-4 text-primary"></i></span>
-                <input type="password" id="inputLog" class="form-control"
-                 placeholder="Enter your Password..." required name="pass">
-              </div>
-              <span class="fs-4">
-                <input type="checkbox" class="form-check-input"
-                onclick="myFunctionlog()"> Show Password
-            </span>
-            <script>
-                function myFunctionlog() {
-  var x = document.getElementById("inputlog");
-  if (x.type === "password") {
-    x.type = "text";
-  } else {
-    x.type = "password";
-  }
-}
-            </script>
-
-        </div>
-        <div class="modal-footer">
-          <input type="submit" name="log" value="REGISTER" class="btn btn-success">
-        </div>
-</form>
-
-
-      </div>
     </div>
-  </div>
+</div>
 
         <!-- Footer-->
         <footer class="bg-white py-4 mt-auto">
             <div class="container px-5">
                 <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0">Copyright &copy; AMINA PRINCES FUNA 2025</div></div>
+                    <div class="col-auto"><div class="small m-0">Copyright &copy; FUNA 2025</div></div>
                     <div class="col-auto">
                         <a class="small" href="#!">Privacy</a>
                         <span class="mx-1">&middot;</span>

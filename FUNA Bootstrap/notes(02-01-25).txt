@@ -1,0 +1,15 @@
+1. to get the cdn link, go to w3school.com
+2. click boostrap and html5
+3. go to get srarted and copy the cdn links and scripts in the samples
+4. paste in your html file
+5. then search for bs jumbotron
+
+*Container - means it gives margin left and right
+
+*Pe - padding right
+*Ps - padding left
+-----------------------------------
+Internal links - means that all the links is inside the html file in every click
+id - means that it goes to another link(<a href=""></a>
+
+
