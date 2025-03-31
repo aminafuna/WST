@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Page</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .row {
+            padding: 50px;
+        }
+        
+        .col1 {
+            width: 25%;
+            padding: 10px 10px 20px 10px;
+            border: 2px solid whitesmoke;
+            background-color: white;
+            box-shadow: 10px 10px 5px gray;
+            float: left;
+            -ms-transform: rotate(7deg);
+            -webkit-transform: rotate(7deg);
+            transform: rotate(7deg);
+        }
+
+        .col1 span {
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        .col1:hover {
+            transform: rotate(0deg);
+        }
+
+        .col2 {
+            width: 25%;
+            padding: 10px 10px 20px 10px;
+            border: 2px solid whitesmoke;
+            background-color: white;
+            box-shadow: 10px 10px 5px gray;
+            float: left;
+            -ms-transform: rotate(-8deg);
+            -webkit-transform: rotate(-8deg);
+            transform: rotate(-8deg);
+        }
+
+        .col2 span {
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        .col2:hover {
+            transform: rotate(0deg);
+        }
+
+        .col3 {
+            width: 25%;
+            padding: 10px 10px 20px 10px;
+            border: 2px solid whitesmoke;
+            background-color: white;
+            box-shadow: 10px 10px 5px gray;
+            float: left;
+            -ms-transform: rotate(7deg);
+            -webkit-transform: rotate(7deg);
+            transform: rotate(7deg);
+        }
+
+        .col3 span {
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        .col3:hover:hover {
+            transform: rotate(0deg);
+        }
+
+        .col4 {
+            width: 25%;
+            padding: 10px 10px 20px 10px;
+            border: 2px solid whitesmoke;
+            background-color: white;
+            box-shadow: 10px 10px 5px gray;
+            float: left;
+            -ms-transform: rotate(-8deg);
+            -webkit-transform: rotate(-8deg);
+            transform: rotate(-8deg);
+        }
+
+        .col4 span {
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        .col4:hover:hover {
+            transform: rotate(0deg);
+        }
+
+        .row:after {
+            content:" ";
+            display: table;
+            clear: both;
+        }
+
+        @media screen and (max-width:600px) {
+            .col1 {
+                width: 100%;
+            }
+            .col2 {
+                width: 100%;
+            }
+            .col3 {
+                width: 100%;
+            }
+            .col4 {
+                width: 100%;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="row">
+
+        <div class="col1">
+            <img src="img/molo mansion.jfif" width="100%">
+            <span>Molo Mansion</span>
+            <p class="des1">The Molo Mansion, also known as the Yusay-Consing Mansion, 
+                is one of the most outstanding historical homes in the Philippines. 
+                Among its most notable features are its high ceilings, Neoclassical 
+                balustrades, and decorative carvings. It stands across the town plaza 
+                and St. Anne Parish Church in the Molo district.</p>
+       </div>
+
+       <div class="col2">
+            <img src="img/museo iloilo.jfif" width="100%">
+            <span>Museo Iloilo</span>
+            <p class="des2">Museo Iloilo is a provincial museum located near the Iloilo 
+                Provincial Capitol in Iloilo City, Philippines. It is the first 
+                government-sponsored museum in the Philippines outside of Metro Manila.
+                The museum houses a collection of Iloilo's cultural heritage.</p>
+       </div>
+
+       <!---->
+
+       <div class="col3">
+            <img src="img/sm city iloilo.jpg" width="100%">
+            <span>SM City Iloilo</span>
+            <p class="des3">SM City Iloilo is a large shopping mall in Mandurriao, Iloilo City,
+                Philippines, owned and operated by SM Prime Holdings. It is the 8th SM Supermall
+                built by the company. It is located along Senator Benigno Aquino Jr. Avenue
+                in the district of Mandurriao.</p>
+       </div>
+
+       <div class="col4">
+            <img src="img/fort san pedro.jpg" width="100%">
+            <span>Fort San Pedro</span>
+            <p class="des4">Fort San Pedro or Fort Nuestra Senora del Rosario is located along 
+                San Pedro Drive in the domestic port area. Quadrilateral in shape, the fort 
+                was built between 1603 and 1616 and measured 60 by 60 meters. The walls were
+                composed of cut-outs of Guimaras rocks and coral stones from along the Panay Coast.</p>
+      </div>
+</body>
+</html>

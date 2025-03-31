@@ -1,0 +1,25 @@
+**3 TYPES OF CSS:
+
+1. external
+
+
+2. internal(means inside/direct of the html file and head) 
+	ex: 
+<style>
+        .nav{
+            background-color: khaki;
+            padding: 20px;
+ 	text-align: center;
+        }
+    </style>
+
+3. inline(inside the line of the html) 
+	ex.
+	 <h1 style="color:aqua">My Book Recommendation</h1>
+
+===================================================
+TAKE NOTE IN CSS:
+.divname is calling out the division class name
+h1(for example) is calling out the html tag
+
+
