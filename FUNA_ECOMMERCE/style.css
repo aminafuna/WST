@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #acdcee;
+    text-align: center;
+}
+
+.container {
+    width: 50%;
+    margin: 50px auto;
+    background: #f4aeba;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 28px;
+    color: blue;
+}
+
+nav {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color:#4f81c7;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(61, 169, 215);
+    font-weight: bold;
+    margin: 0 10px;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+nav a:hover {
+    color: rgb(242, 132, 242); 
+    text-decoration: underline;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="file"],
+input[type="text"],
+input[type="submit"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #2e94b9;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(242, 132, 242);
+}
+
+.viewtable {
+    background-color: #dcd6f7;
+}
+.conttable{
+    background-color: #64c4ed;
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #4f81c7;
+    color: black;
+}
+
+td img {
+    max-width: 100px;
+    border-radius: 5px;
+}
+
+.delete-link {
+    color: purple;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.delete-link:hover {
+    color: red;
+    text-decoration: underline;
+}
